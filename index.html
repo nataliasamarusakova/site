@@ -35,7 +35,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Название компании | Вид деятельности</title>
+	<title>PAMETNIK | Благоустройство памятников в Беларуси</title>
 </head>
 
 <body class="stretched no-transition main_page [page_preview]">
@@ -96,7 +96,66 @@
 
 			</div>
 
-		</header><!-- / block_100020 -- >
+		</header>
+
+
+
+
+
+		<style>
+			.dialog-container {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: fixed;
+				z-index: 9999;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba(0, 0, 0, 0.5);
+			}
+
+			.dialog-content {
+				background-color: #fff;
+				padding: 20px;
+				border-radius: 5px;
+				max-width: 400px;
+			}
+		</style>
+
+		<div id="dialog-container" class="dialog-container" style="display: none;">
+			<div style="text-align: center;" class="dialog-content">
+				<br>
+				<b>Пожалуйста свяжитесь со мной</b>
+				<br>
+				<br>
+				<p style="text-align: start;">Для получения дополнительной информации или запланировать встречу, звоните
+					по телефону <b>+375 29 506-04-68</b>.
+				</p>
+				<p style="text-align: start; padding: 0; margin: 5;">Я готов ответить на все Ваши вопросы и предоставить
+					консультацию об
+					услугах по
+					благоустройству памятников. Ждем вашего звонка!</p>
+				<button onclick="closeDialog()"
+					class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Закрыть</button>
+			</div>
+		</div>
+
+		<script>
+			function openDialog() {
+				var dialogContainer = document.getElementById("dialog-container");
+				dialogContainer.style.display = "flex";
+			}
+
+			function closeDialog() {
+				var dialogContainer = document.getElementById("dialog-container");
+				dialogContainer.style.display = "none";
+			}
+		</script>
+
+
+		<!-- / block_100020 -- >
 <!-- slider -->
 
 		<!-- Простая обложка с текстом и кнопкой #49 (100021) -->
@@ -110,24 +169,36 @@
 							<div class="emphasis-title center">
 								<h2 class="editable block_100021 item-option_938199 field_title">Памятники и ритуальные
 									принадлежности</h2>
-
 								<p class="lead topmargin-sm editable block_100021 item-option_3 field_text">
 									Благоустройство памятников и могил в Беларуси</p>
+								<div class="container clearfix"
+									style="padding-bottom: 20px; display:flex; justify-content: center;">
 
+									<a target="_blank" href="https://www.instagram.com/era_ritual_stroi/"
+										class="social-icon si-blogger si-borderless nobottommargin si-instagram"><i
+											class="icon-instagram"></i><i class="icon-instagram"></i></a>
 
-								<p class="lead topmargin-sm nobottommargin"><a href='o-kompanii.html'
-										class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
-								</p>
+									<a target="_blank" href="tel:375295060468"
+										class="social-icon si-phone si-borderless nobottommargin si-phone"><i
+											class="icon-phone"></i><i class="icon-phone"></i></a>
+
+									<a href="mailto:vspro22801@gmail.com"
+										class="social-icon si-email3 si-borderless nobottommargin si-email3"><i
+											class="icon-email3"></i><i class="icon-email3"></i></a>
+								</div>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Заказать
+									услуги</button>
 
 							</div>
 						</div>
-
 					</div>
 				</div>
-
 			</div>
 		</section>
 		<!-- / block_100021 -- >
+
+			
 <!-- content -->
 		<section id="content" class="clearfix">
 
@@ -227,8 +298,9 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 10 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -241,8 +313,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 15 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -255,8 +327,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 35 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -269,8 +341,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 35 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 
@@ -284,8 +356,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 45 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -298,8 +370,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 50 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -312,8 +384,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 50 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -326,8 +398,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 50 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 						</div>
 						<br>
@@ -351,8 +423,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 1500 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -364,8 +436,8 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 2050 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
@@ -377,34 +449,34 @@ padding-bottom:60px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 155 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 
 							<div class="oc-item"
 								style="text-align: center; border: 1px solid #ccc; border-radius: 10px; padding: 10px;">
-								<div style="margin: 5px;">Изготовление изделий из гранита и мрамора любой сложности</div>
+								<div style="margin: 5px;">Изготовление изделий из гранита и мрамора любой сложности
+								</div>
 								<a target="_blank" href="index.html#">
 									<img style="padding: 10px;" src="./img/s5.jpg"
 										style="border: 1px solid #ccc; border-radius: 5px;">
 								</a>
 								<div>Цена: от <span style="color: #077B7A; font-weight: bold;"> 165 </span> руб.
 								</div>
-								<a href='o-kompanii.html'
-									class="button button-large button-rounded button-circle button-circle  editable block_100021 item-option_1 field_button_text">Подробнее</a>
+								<button onclick="openDialog()"
+									class="button button-large button-rounded button-circle button-circle editable block_100021 item-option_1 field_button_text">Подробнее</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<!-- / block_100036 -- >
 
-<!-- Инфо блок + картинка (на всю ширину столбца) #93 (100033) -->
+			<!-- Инфо блок + картинка (на всю ширину столбца) #93 (100033) -->
 			<div class="section nobg  nopadding" style="margin-top:unset;margin-bottom:unset;">
 				<div style="background-color: rgba(0, 0, 0, 0);padding-top:unset;padding-bottom:unset;    ">
 					<div class="nocontainer clearfix">
 						<div class="row common-height clearfix">
-							<div class="col-lg-6 col-padding">
+							<div class="col-lg-7 col-padding">
 								<div class="vertical-middle clearfix leftpadding rightpadding">
 									<h3 class="nott editable block_100033 item-option_823677 field_title">Немного обо
 										мне</h3>
@@ -420,13 +492,10 @@ padding-bottom:60px;">
 										вид, но и имеют практическое применение, служат как туристическим объектам, так
 										и местами отдыха и собраний для местного сообщества.
 									</p>
-									<p class="nobottommargin"><a href="o-kompanii.html"
-											class="button btn noleftmargin button-circle editable block_100033 item-option_1 field_button_text">Подробнее</a>
-									</p>
 								</div>
 							</div>
-							<div class="col-lg-5 col-padding"
-								style="background: url('img/6b208e3e-c74d-4a53-9bdb-abd71f937b89.jpg') center center no-repeat; margin: 30px; background-size: cover; border-radius: 5%;">
+							<div class="col-lg-4 col-padding"
+								style="background: url('img/6b208e3e-c74d-4a53-9bdb-abd71f937b89.jpg') center center no-repeat; margin: 30px; background-size: cover; border-radius: 3%;">
 
 							</div>
 						</div>
@@ -450,6 +519,15 @@ padding-bottom:60px;">
 						<div id="oc-clients" class="owl-carousel image-carousel carousel-widget" data-margin="20"
 							data-nav="false" data-pagi="true" data-items-xs="2" data-items-sm="3" data-items-md="4"
 							data-items-lg="3" data-items-xl="3">
+							<div class="oc-item">
+								<img src="img/s6.jpg">
+							</div>
+							<div class="oc-item">
+								<img src="img/s7.jpg">
+							</div>
+							<div class="oc-item">
+								<img src="img/s8.jpg">
+							</div>
 							<div class="oc-item">
 								<img src="img/1.jpg">
 							</div>
@@ -573,7 +651,7 @@ padding-bottom:60px;
 
 							<div class="widget clearfix" style="margin-bottom: -20px;">
 								<div class="fancy-title title-bottom-border">
-									<h3 class="editable block_100024 item-option_332185 field_title">Название компании
+									<h3 class="editable block_100024 item-option_332185 field_title">PAMETNIK.BY
 									</h3>
 								</div>
 								<p class="editable block_100024 item-option_2 field_text">Перепечатка, а равно и
@@ -588,13 +666,16 @@ padding-bottom:60px;
 
 							<div class="widget clearfix" style="margin-bottom: -20px;">
 								<div class="fancy-title title-bottom-border">
-									<h3 class="editable block_100024 item-option_472834 field_callback_title">Обратная
-										связь</h3>
+									<h3 class="editable block_100024 item-option_472834 field_callback_title">Время
+										работы</h3>
 								</div>
-								<p class="editable block_100024 item-option_411192 field_callback_text">Оставьте заявку
-									и наши менеджеры свяжутся с вами в течении 15 минут</p>
-
-
+								<p class="editable block_100024 item-option_411192 field_callback_text">Время работы
+									офиса: <br>
+									Вт–Сб с 10:00 до 19:00
+									<br>
+									Время приёма звонков:<br>
+									Пн–Вс с 09:00 до 21:00
+								</p>
 							</div>
 
 						</div>
@@ -648,44 +729,30 @@ padding-bottom:60px;
 					<div class="container clearfix">
 
 						<div class="col_half">
-							<span class="editable block_100024 item-option_269049 field_footer_text">Название компании ©
-								2024 | <a target="_blank" href="http://shabloner.ru/" title="Дизайн сайта">Шаблонер</a>
-								| Все права защищены</span>
+							<span class="editable block_100024 item-option_269049 field_footer_text">PAMETNIK.BY ©
+								2024 | Все права защищены.</span>
 						</div>
 
 						<div class="col_half col_last tright">
 							<div class="fright clearfix">
-
-								<a href="http://site.com/company"
-									class="social-icon si-small si-borderless nobottommargin si-vk"><i
-										class="icon-vk"></i><i class="icon-vk"></i></a>
-
-								<a href="http://site.com/company"
-									class="social-icon si-small si-borderless nobottommargin si-instagram"><i
+								<a target="_blank" href="https://www.instagram.com/era_ritual_stroi/"
+									class="social-icon si-blogger si-borderless nobottommargin si-instagram"><i
 										class="icon-instagram"></i><i class="icon-instagram"></i></a>
 
-								<a href="http://site.com/company"
-									class="social-icon si-small si-borderless nobottommargin si-facebook"><i
-										class="icon-facebook"></i><i class="icon-facebook"></i></a>
+								<a target="_blank" href="tel:375295060468"
+									class="social-icon si-phone si-borderless nobottommargin si-phone"><i
+										class="icon-phone"></i><i class="icon-phone"></i></a>
 
-								<a href="http://site.com/company"
-									class="social-icon si-small si-borderless nobottommargin si-youtube"><i
-										class="icon-youtube"></i><i class="icon-youtube"></i></a>
-
-								<a href="http://site.com/company"
-									class="social-icon si-small si-borderless nobottommargin si-twitter"><i
-										class="icon-twitter"></i><i class="icon-twitter"></i></a>
-
+								<a href="mailto:vspro22801@gmail.com"
+									class="social-icon si-email3 si-borderless nobottommargin si-email3"><i
+										class="icon-email3"></i><i class="icon-email3"></i></a>
 							</div>
 						</div>
-
 					</div>
-
-				</div><!-- #copyrights end -->
-
+				</div>
+				<!-- #copyrights end -->
 			</footer><!-- #footer end -->
 			<!-- / block_100024 -- >
-
 	</div><!-- #wrapper end -->
 
 			<div class="modal fade " id="dialog" tabindex="-1" role="dialog" aria-labelledby="dialog">
